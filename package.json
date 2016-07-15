@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify -e src/index.js -o dist/index.js -t [ babelify ]",
-    "test": "mocha test/.setup.js test/**/*.spec.js --compilers js:babel-register"
+    "test": "mocha test/**/*.spec.js -r test/.setup --compilers js:babel-register"
   },
   "author": "tsuyoshiwada",
   "license": "MIT",
